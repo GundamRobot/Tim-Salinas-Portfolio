@@ -1,0 +1,400 @@
+/*
+    Colours:
+    #2c3e50
+    #0f171f
+    #2b2b2b
+    #f4f4f4
+    #e67e22
+*/
+
+/* ------------------------------ */
+/* BASIC SETUP */
+/* ------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #2b2b2b;
+    color: #f4f4f4;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    /* Test font styling */
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.row { margin: 0 auto; }
+
+section { padding: 90px 0px; }
+/* This is temporary */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 30px
+}
+
+p { padding: 0 15px; }
+
+div { display: block; }
+
+/* ------------------------------ */
+/* LANDING PAGE */
+/* ------------------------------ */
+
+header {
+    background-image: linear-gradient(#000, rgba(0, 0, 0, 0.2)), url(../img/northern-lights-2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* background-attachment: fixed; */
+}
+.landing-page-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+nav { padding: 0 30px; }
+
+.logo,
+.logo-black {
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.logo-black { display: none; }
+
+/* ---------- Main Nav ---------- */
+.main-nav {
+    display: block;
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-nav li a,
+.main-nav li a:link,
+.main-nav li a:active {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 90%;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active { border-bottom: 3px solid #e67e22; }
+
+#hamburger-icon {
+  /* display: block; */
+  display: none;
+  width: 35px;
+  float: right;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+#hamburger-icon span {
+  display: block;
+  background-color: #e67e22;
+  width: auto;
+  height: 5px;
+  /* margin-bottom: 5px; */
+  margin: 5px 0;
+  transition: 0.20s ease-in-out;
+}
+
+#hamburger-icon.open span:nth-child(1) {
+  transform: translate(0, 10px) rotate(45deg);
+}
+
+#hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger-icon.open span:nth-child(3) {
+  transform: translate(0, -10px) rotate(-45deg);
+}
+
+
+/* ---------- Sticky Nav ---------- */
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #939393;
+    z-index: 9999;
+    padding-bottom: 10px;
+}
+
+.sticky-nav .logo { display: none; }
+.sticky-nav .logo-black { display: block; }
+.sticky-nav .main-nav li a { color: #000; }
+
+/* ---------- Scroll Button ---------- */
+.scroll-button {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* This is temporary */
+}
+
+.scroll-button a {
+    color: #f4f4f4;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+/* ------------------------------ */
+/* ABOUT PAGE */
+/* ------------------------------ */
+#about {
+    background-color: #2b2b2b;
+    max-width: 1152px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.my-photo {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 3px;
+}
+
+.about-text { margin-bottom: 30px; }
+
+.button-link,
+input[type=submit] {
+    background-color: #f4f4f4;
+    color: #000;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    display: block;
+    margin: 0 auto;
+}
+
+.button-link{
+    width: 30%;
+    text-align: center;
+}
+
+/* ------------------------------ */
+/* PORTFOLIO PAGE */
+/* ------------------------------ */
+
+#portfolio {
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+.info-box {
+    background-color: #f4f4f4;
+    color: #2b2b2b;
+    height: 400px;
+    padding: 30px;
+    overflow: auto;
+}
+
+.info-box h3 { margin-bottom: 10px; }
+
+.thumbnail {
+    width: 100%;
+    height: 400px;
+}
+/* ------------------------------ */
+/* CONTACT PAGE */
+/* ------------------------------ */
+
+.contact-section {
+    background-image: linear-gradient(#000, rgba(0, 0, 0, 0.2)), url(../img/northern-lights-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contact-section p { text-align: center; }
+
+.contact-form {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.form-input:focus {
+    outline: none !important;
+    border: 3px solid #e67e22;
+    transition: 0.5s;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    -webkit-appearance: none;
+    width: 40%;
+    height: 45px;
+    padding: 10px;
+    border: 3px solid #fff;
+    display: block;
+    margin: 0 auto;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+input[type=submit] {
+    -webkit-appearance: none;
+    border: none;
+    background-color: #e67e22;
+    color: #f4f4f4;
+    padding: 12px 20px;
+}
+
+
+/* ------------------------------ */
+/* FOOTER */
+/* ------------------------------ */
+
+footer {
+    padding: 30px 30px 0 30px;
+    background-color: #0f171f;
+}
+
+footer h2 { float: left; }
+
+footer p { text-align: center; }
+
+.social-media-group {
+    list-style: none;
+    float: right;
+}
+
+.social-media-group li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.social-media-group li a { color: #f4f4f4; }
+
+.social-media-group li a:link,
+.social-media-group li a:active {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 175%;
+}
+
+.social-media-group li a:hover,
+.social-media-group li a:active { color: #e67e22; }
+
+/* ------------------------------ */
+/* MEDIA QUERIES */
+/* ------------------------------ */
+
+/* Big tablet to 1200px (widths small than the 1140px row) */
+@media screen and (max-width: 1200px) {
+    .work-piece {
+        padding: 0 20px 0 20px;
+    }
+}
+
+/* Small tablets to Big tablet: from 768px to 1023px */
+@media screen and (max-width: 1024px) {
+    .info-box { font-size: 80%; }
+
+    .social-media-group li {
+        margin-left: 10px;
+    }
+}
+
+/* Small phones to Small tablets: from 481px to 767px */
+@media screen and (max-width: 768px) {
+    .my-photo {
+        padding: 0 0 20px 20px;
+    }
+    .about-text { text-align: center; }
+    .main-nav { float: right; }
+
+    .work-piece {
+        padding: 0;
+    }
+
+    .info-box { display: none;}
+    .work-image {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        width: 95%;
+        height: auto;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+/* Small phones: from 0 to 480px */
+@media screen and (max-width: 480px) {
+    .main-nav {
+        display: none;
+    }
+
+    .landing-page-text h1 {
+        padding: 0 20px 0 20px;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+
+    .my-photo {
+        padding: 0 0 20px 0;
+    }
+
+    .thumbnail {
+        display: block;
+        float: none;
+        margin: 0 auto 20px auto;
+        width: 95%;
+        height: auto;
+    }
+
+    footer h2 {
+        text-align: center;
+        float: none;
+    }
+
+    .social-media-group {
+        display: block;
+        float: none;
+        margin: 20px auto 20px auto;
+        text-align: center;
+    }
+}

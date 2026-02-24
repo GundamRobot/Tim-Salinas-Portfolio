@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Tim Designs</title>
+        <link rel="stylesheet" type="text/css" href="css/grid.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    </head>
+    <body>
+        <header id="home">
+            <nav id="nav-bar">
+                <div class="row">
+                    <img src="img/portfolio_logo_light.png" alt="Tim Design Logo" class="logo">
+                    <a href="#home" class="nav-button">
+                        <img src="img/portfolio_logo_dark.png" alt="Tim Design Logo" class="logo-black">
+                    </a>
+                    <div id="hamburger-icon">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <ul class="main-nav">
+                        <li><a href="#about" class="nav-button">About</a></li>
+                        <li><a href="#portfolio" class="nav-button">Portfolio</a></li>
+                        <li><a href="#contact" class="nav-button">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="landing-page-text">
+                <h1>Welcome to Tim Designs!</h1>
+            </div>
+            <div class="scroll-button">
+                <a href="#about" class="nav-button"><i class="fas fa-chevron-circle-down"></i></a>
+            </div>
+        </header>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="row">
+                <h2>About me</h2>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <img src="img/me.jpg" alt="A photo of me" class="my-photo">
+                    </div>
+                    <div class="col span-2-of-3">
+                        <p class="about-text">
+                            Hello! My name is Tim. I'm working towards becoming a Web Developer.
+                        </p>
+                        <p class="about-text">
+                            I think the greatest thing about developing websites is making something look pleasing to the eye as well as functional. Keeping things simple is key to making the user experience both seamless and fun. In the end, I want help other people through the expression of my creativity.
+                        </p>
+                        <p class="about-text">
+                            As for my skillsets, I have experience with working in web technologies such as HTML, CSS, JavaScript, and some PHP/MySQL. I also have experience in working with design software in Adobe Suite and 3D Modelling with Maya and Blender.
+                        </p>
+                        <p class="about-text">
+                            Outside of Web Development, I enjoy eating steaks, competitive Smash Bros, and exploring the outdoors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="row">
+                <h2>Portfolio</h2>
+                <div class="work-piece">
+                    <div class="row">
+                        <div class="info-box col span-1-of-3">
+                            <h3>Journal App</h3>
+                            <p>This is a simple journal application that I work on to practice programming and UI design skills. It has simple create, read, update, and delete functionality. It also stores your entries persistently through your browser's local storage.</p>
+                            <br>
+                            <p>HTML / CSS / JavaScript (Vanilla)</p>
+                        </div>
+                        <div class="work-image col span-2-of-3">
+                            <a href="portfolio/JournalApp" target="_blank"><img src="img/journalappscreenshot.png" alt="Journal App" class="thumbnail"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="work-piece">
+                    <div class="row">
+                        <div class="info-box col span-1-of-3">
+                            <h3>Sample Work</h3>
+                            <p>Here is where you put some of your text here. You can talk about what you did, who is your client, and what kind of project it is.</p>
+                            <br>
+                            <p>You can also talk about what kind of technologies you used to make the project. Example: html, css, javascript, php, etc.</p>
+                        </div>
+                        <div class="work-image col span-2-of-3">
+                            <a href="#"><img src="img/app-example.jpg" alt="portfolio image" class="thumbnail"></a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="row">
+                <div class="row">
+                    <h2>Contact</h2>
+                </div>
+                <div class="row">
+                    <p>
+                        If you like what what you see, feel free to contact me!
+                    </p>
+                </div>
+                <!-- <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-12-of-12">
+                            <input type="text" name="name" id="name" class="form-input" placeholder="Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-12-of-12">
+                            <input type="email" name="email" id="email" class="form-input" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-12-of-12">
+                            <textarea rows="3" class="form-input" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-12-of-12">
+                            <input type="submit" value="Send Message">
+                        </div>
+                    </div>
+                </form> -->
+            </div>
+        </section>
+        <!-- Footer Section -->
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <h2>Tim Designs</h2>
+                </div>
+                <div class="col span-1-of-3">
+                    <p>© 2018 &#183; Tim Designs &#183; All rights reserved</p>
+                </div>
+                <div class="col span-1-of-3">
+                    <ul class="social-media-group">
+                        <li><a href="https://codepen.io/gundamrobot/" target="_blank"><i class="fab fa-codepen"></i></a></li>
+                        <li><a href="https://github.com/GundamRobot" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://ca.linkedin.com/in/tim-salinas-b687b5116" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://twitter.com/TheGundamRobot" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
+
+<!--
+
+-->
